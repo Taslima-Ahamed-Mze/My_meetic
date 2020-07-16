@@ -1,0 +1,35 @@
+.menu,.menu ul
+{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    line-height: 2em;
+    
+}
+.menu a
+{
+    color: black;
+    border:1px solid rgb(206, 138, 191);
+    border-radius: 2px;
+    background-color: #e8b1e4;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 100px;
+}
+.menu a:hover
+{
+    background-color:#e8b1e4;
+}
+.menu li
+{
+    float: left;
+    list-style: none;
+    position: relative; 
+}
+.menu ul
+{
+    line-height: 1.7em;
+    position: absolute;
+    display: none;
+}

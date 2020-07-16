@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>my_meetic</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    
+    <ul class="menu">
+        
+        <li><a href="mon_compte.php">Compte</a></li>
+        <li><a href="#">Rechercher</a>
+            <ul>
+                <li><a href="recherche.php">Genre</a></li>
+                <li><a href="recherche.php">Localisation</a></li>
+                <li><a href="recherche.php">Loisir</a></li>
+                <li><a href="recherche.php">Age</a></li>
+            </ul>
+        </li>
+        <li><a href="se-connecter.php">Déconnexion</a></li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.menu li').hover(function(){
+                $('ul:first',this).stop().slideDown();
+            },function(){
+                $('ul:first',this).stop().slideUp(); 
+            });
+        });
+    </script>
+</body>
+</html>
